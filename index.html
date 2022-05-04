@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentaion Page</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header><h1>Front-End Technologies Documentaion</h1></header>
+      <ul>
+        <li><a href="#html" class="nav-link">HTML</a></li>
+        <li><a href="#css" class="nav-link">CSS</a></li>
+        <li><a href="#javascript" class="nav-link">JavaScript</a></li>
+        <li><a href="#libraries" class="nav-link">Libraries</a></li>
+        <li><a href="#frameworks" class="nav-link">Frameworks</a></li>
+        <li>
+          <a href="#css_preprocessors" class="nav-link">CSS Preprocessors</a>
+        </li>
+        <li><a href="#typescript" class="nav-link">TypeScript</a></li>
+        <li>
+          <a href="#version_control_systems" class="nav-link"
+            >Version Control Systems</a
+          >
+        </li>
+        <li>
+          <a href="#package_managers" class="nav-link">Package Managers</a>
+        </li>
+        <li><a href="#task_runners" class="nav-link">Task Runners</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="html">
+        <header><h2>HTML</h2></header>
+        <p>
+          HTML (HyperText Markup Language) is the most basic building block of
+          the Web. It defines the meaning and structure of web content. Other
+          technologies besides HTML are generally used to describe a web page's
+          appearance/presentation (CSS) or functionality/behavior (JavaScript).
+        </p>
+        <ul>
+          <li>HTML is the standard markup language for Web pages.</li>
+          <li>With HTML you can create your own Website.</li>
+        </ul>
+        <h3>HTML Example</h3>
+        <pre>
+            <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+          </code>
+          </pre>
+      </section>
+
+      <section class="main-section" id="css">
+        <header><h2>CSS</h2></header>
+        <p>
+          Cascading Style Sheets (CSS) is a stylesheet language used to describe
+          the presentation of a document written in HTML. CSS describes how
+          elements should be rendered on screen, on paper, in speech, or on
+          other media.
+        </p>
+        <ul>
+          <li>CSS is the language we use to style an HTML document.</li>
+          <li>CSS describes how HTML elements should be displayed.</li>
+        </ul>
+        <h3>CSS Example</h3>
+        <pre>
+          <code>
+body {
+background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+        </code>
+        </pre>
+      </section>
+
+      <section class="main-section" id="javascript">
+        <header><h2>JavaScript</h2></header>
+        <p>
+          JavaScript (JS) is a lightweight, interpreted, or just-in-time
+          compiled programming language with first-class functions. While it is
+          most well-known as the scripting language for Web pages, many
+          non-browser environments also use it, such as Node.js, Apache CouchDB
+          and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm,
+          single-threaded, dynamic language, supporting object-oriented,
+          imperative, and declarative (e.g. functional programming) styles.
+        </p>
+        <ul>
+          <li>JavaScript is the world's most popular programming language.</li>
+          <li>JavaScript is the programming language of the Web.</li>
+          <li>JavaScript is easy to learn.</li>
+        </ul>
+        <h3>JavaScript Example</h3>
+        <pre>
+          <code>
+let person = prompt("Please enter your name");
+let text;
+if (person == null || person == "") {
+  text = "User cancelled the prompt.";
+} else {
+  text = "Hello " + person + "! How are you today?";
+}
+        </code>
+</pre>
+      </section>
+
+      <section class="main-section" id="libraries">
+        <header><h2>Libraries</h2></header>
+        <p>
+          The libraries are collections of prewritten code snippets that can be
+          used (and reused) to perform common functions. a library code can be
+          plugged into the rest of your project’s code.
+        </p>
+        <h3>Example of CSS libraries</h3>
+        <ul>
+          <li>Font Awesome</li>
+          <li>Pure.css</li>
+          <li>Animate.css</li>
+        </ul>
+        <h3>Examples of Javascript libraries</h3>
+        <ul>
+          <li>React.js</li>
+          <li>JQuery</li>
+          <li>D3.js</li>
+        </ul>
+        <h3>React Code Example</h3>
+        <pre>
+          <code>
+import React from &#039;react&#039;;
+import ReactDOM from &#039;react-dom/client&#039;;
+
+function Hello(props) {
+  return &lt;h1&gt;Hello World!&lt;/h1&gt;;
+}
+
+const root = ReactDOM.createRoot(document.getElementById(&quot;root&quot;));
+root.render(&lt;Hello /&gt;);
+        </code>
+        </pre>
+      </section>
+
+      <section class="main-section" id="frameworks">
+        <header><h2>Frameworks</h2></header>
+        <p>
+          frameworks are a full toolset that help shape and organize your
+          website or web application. and provide a structure (like a skeleton,
+          or a scaffolding…or a framework) to base your entire project around.
+        </p>
+        <h3>Example of CSS frameworks</h3>
+        <ul>
+          <li>Bootstrap</li>
+          <li>Foundation</li>
+          <li>Bulma</li>
+        </ul>
+        <h3>Examples of Javascript Frameworks</h3>
+        <ul>
+          <li>Angular</li>
+          <li>Vue.js</li>
+          <li>Next.js</li>
+        </ul>
+        <h3>Angular Code Example</h3>
+        <pre>
+          <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en-US&quot;&gt;
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js&quot;&gt;&lt;/script&gt;
+&lt;body&gt;
+
+&lt;div ng-app=&quot;&quot;&gt;
+  &lt;p&gt;Name : &lt;input type=&quot;text&quot; ng-model=&quot;name&quot;&gt;&lt;/p&gt;
+  &lt;h1&gt;Hello {{name}}&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+        </code>
+        </pre>
+      </section>
+
+      <section class="main-section" id="css_preprocessors">
+        <header><h2>CSS Preprocessors</h2></header>
+        <p>
+          CSS preprocessors are scripting languages that extend the default
+          capabilities of CSS. They enable us to use logic in our CSS code, such
+          as variables, nesting, inheritance, mixins, functions, and
+          mathematical operations.
+        </p>
+        <h3>CSS Preprocessors Examples</h3>
+        <ul>
+          <li>Sass</li>
+          <li>LESS</li>
+          <li>Stylus</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="typescript">
+        <header><h2>TypeScript</h2></header>
+        <p>
+          TypeScript is a strongly typed programming language that builds on
+          JavaScript, giving you better tooling at any scale.
+        </p>
+        <ul>
+          <li>TypeScript is JavaScript with added syntax for types.</li>
+        </ul>
+        <h3>TypeScript Example</h3>
+      </section>
+
+      <section class="main-section" id="version_control_systems">
+        <header><h2>Version Control Systems</h2></header>
+        <p>
+          Version control, also known as source control, is the practice of
+          tracking and managing changes to software code. Version control
+          systems are software tools that help software teams manage changes to
+          source code over time. like: Git
+        </p>
+        <p>
+          and There is some platforms that is a code hosting platforms for
+          version control and collaborations. like:
+        </p>
+        <ul>
+          <li>Github</li>
+          <li>Bitbucket</li>
+          <li>Gitlab</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="package_managers">
+        <header><h2>Package Managers</h2></header>
+        <p>
+          A package manager keeps track of what software is installed on your
+          computer, and allows you to easily install new software, upgrade
+          software to newer versions, or remove software that you previously
+          installed.
+        </p>
+        <h3>Package Managers Examples</h3>
+        <ul>
+          <li>NPM</li>
+          <li>Yarn</li>
+          <li>Bower</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="task_runners">
+        <header><h2>Task Runners</h2></header>
+        <p>
+          A JS task runner runs commands for you that would otherwise be tedious
+          or impossible. Task runners provide value by automating numerous
+          development tasks such as concatenating files, spinning up development
+          servers, and compiling code
+        </p>
+        <h3>Task Runners Examples</h3>
+        <ul>
+          <li>NPM Scripts</li>
+          <li>Grunt</li>
+          <li>Gulp</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
