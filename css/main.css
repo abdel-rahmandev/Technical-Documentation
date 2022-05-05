@@ -79,4 +79,7 @@ li a {
     max-height: 50vh;
     text-align: center;
   }
+  #main-doc {
+    max-height: none;
+  }
 }
